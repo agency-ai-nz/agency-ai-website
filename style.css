@@ -206,7 +206,7 @@ header nav {
 /* ── SERVICES ── */
 .services {
   padding: 88px 0;
-  background: var(--bone);
+  background: #fff;
 }
 
 .services-group {
@@ -245,28 +245,8 @@ header nav {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.service-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 24px 22px;
-  border: 1px solid #e8e5e0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-}
-
-.service-card h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--charcoal);
-  margin-bottom: 8px;
-}
-
-.service-card p {
-  font-size: 14px;
-  color: var(--slate);
-  line-height: 1.65;
+  gap: 24px;
+  margin-top: 32px;
 }
 
 /* ── CONTACT ── */
@@ -309,7 +289,6 @@ footer .logo-text {
   .nav-links { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 0; }
   .cards { grid-template-columns: 1fr; }
-  .services-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
   .hero { padding: 64px 0 56px; }
   .about, .approach, .services, .contact { padding: 64px 0; }
