@@ -203,6 +203,70 @@ header nav {
   line-height: 1.7;
 }
 
+/* ── SERVICES ── */
+.services {
+  padding: 88px 0;
+}
+
+.services-group {
+  margin-top: 64px;
+}
+
+.services-group-header {
+  margin-bottom: 32px;
+}
+
+.sector-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: rgba(11, 82, 112, 0.08);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.sector-tag--green {
+  color: var(--green);
+  background: rgba(45, 106, 79, 0.08);
+}
+
+.services-group-header p {
+  font-size: 16px;
+  color: var(--slate);
+  max-width: 620px;
+  line-height: 1.7;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.service-card {
+  background: var(--bone);
+  border-radius: 10px;
+  padding: 24px 22px;
+  border: 1px solid #e8e5e0;
+}
+
+.service-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.65;
+}
+
 /* ── CONTACT ── */
 .contact {
   padding: 96px 0;
@@ -243,7 +307,8 @@ footer .logo-text {
   .nav-links { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 0; }
   .cards { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
   .hero { padding: 64px 0 56px; }
-  .about, .approach, .contact { padding: 64px 0; }
+  .about, .approach, .services, .contact { padding: 64px 0; }
 }
