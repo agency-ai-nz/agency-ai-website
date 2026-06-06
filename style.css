@@ -280,10 +280,10 @@ header nav {
   background: var(--bone);
 }
 
-.services h2 { font-size: clamp(30px, 4.5vw, 46px); }
+.services h2 { margin-bottom: 8px; }
 
 .services-group {
-  margin-top: 48px;
+  margin-top: 8px;
 }
 
 .services-group-header {
