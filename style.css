@@ -120,7 +120,7 @@ header nav {
 
 .hero h1 {
   font-size: clamp(24px, 2.2vw, 34px);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   color: var(--blue);
   margin-bottom: 20px;
@@ -177,14 +177,7 @@ header nav {
 }
 
 .slide-dots {
-  position: absolute;
-  bottom: 16px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 7px;
-  z-index: 2;
+  display: none;
 }
 
 .dot {
