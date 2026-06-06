@@ -106,7 +106,7 @@ header nav {
   grid-template-columns: 1fr 1fr;
   gap: 56px;
   align-items: center;
-  padding: 80px 0;
+  padding: 56px 0;
 }
 
 .tagline-label {
@@ -198,7 +198,7 @@ header nav {
 
 /* ── ABOUT ── */
 .about {
-  padding: 88px 0;
+  padding: 64px 0;
 }
 
 .about h2, .approach h2, .contact h2, .services h2 {
@@ -230,7 +230,7 @@ header nav {
 
 /* ── APPROACH ── */
 .approach {
-  padding: 56px 0;
+  padding: 40px 0;
   background: #fff;
 }
 
@@ -276,19 +276,23 @@ header nav {
 
 /* ── SERVICES ── */
 .services {
-  padding: 56px 0;
+  padding: 40px 0;
   background: var(--bone);
 }
 
 .services h2 {
-  font-size: clamp(28px, 4vw, 42px);
+  font-size: clamp(22px, 3vw, 32px);
   font-weight: 800;
-  color: var(--blue);
-  margin-bottom: 8px;
+  color: #000;
+  margin-bottom: 32px;
 }
 
 .services-group {
   margin-top: 8px;
+}
+
+.services-group + .services-group {
+  margin-top: 64px;
 }
 
 .services-group-header {
@@ -329,7 +333,7 @@ header nav {
 
 /* ── CONTACT ── */
 .contact {
-  padding: 96px 0;
+  padding: 72px 0;
   text-align: center;
 }
 
@@ -370,5 +374,5 @@ footer .logo-text {
   .about-grid { grid-template-columns: 1fr; gap: 0; }
   .cards { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
-  .about, .approach, .services, .contact { padding: 64px 0; }
+  .about, .approach, .services, .contact { padding: 48px 0; }
 }
