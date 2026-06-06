@@ -36,11 +36,54 @@
 
   <main>
     <section class="hero">
-      <div class="container">
-        <p class="tagline-label">For the Public Good</p>
-        <h1>AI that works for<br>New Zealand</h1>
-        <p class="hero-sub">We help government and community organisations move from AI ambition to working tools, that deliver a measurable lift in outcomes, that you care about.</p>
-        <a href="#contact" class="btn">Get in touch</a>
+      <div class="hero-split container">
+        <div class="hero-text">
+          <p class="tagline-label">For the Public Good</p>
+          <h1>AI that works for<br>New Zealand</h1>
+          <p class="hero-sub">We help government and community organisations move from AI ambition to working tools, that deliver a measurable lift in outcomes, that you care about.</p>
+          <a href="#contact" class="btn">Get in touch</a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-slides">
+            <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">More food reaching people who need it</p>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1658298775754-5839ffd434cc?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">Faster uptake of renewable energy</p>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1644021267335-dd6ec911687d?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">Better management of our water</p>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://plus.unsplash.com/premium_photo-1661774861781-e540fbc29330?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">More voices heard in local decisions</p>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1609846615884-61b22397f31a?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">More affordable homes in the right places</p>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://plus.unsplash.com/premium_photo-1673240159015-e0ced88df98c?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">Safer, more connected communities</p>
+            </div>
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1748712308061-a05eb149990a?auto=format&fit=crop&w=900&q=80')">
+              <div class="slide-overlay"></div>
+              <p class="slide-caption">More native species thriving</p>
+            </div>
+          </div>
+          <div class="slide-dots">
+            <button class="dot active" aria-label="Food security"></button>
+            <button class="dot" aria-label="Clean energy"></button>
+            <button class="dot" aria-label="Water"></button>
+            <button class="dot" aria-label="Community voice"></button>
+            <button class="dot" aria-label="Housing"></button>
+            <button class="dot" aria-label="Safe communities"></button>
+            <button class="dot" aria-label="Biodiversity"></button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -274,5 +317,22 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var slides = document.querySelectorAll('.hero-slide');
+      var dots   = document.querySelectorAll('.dot');
+      var current = 0, timer;
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = n;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+      function startTimer() { timer = setInterval(function(){ goTo((current+1) % slides.length); }, 5000); }
+      dots.forEach(function(d,i){ d.addEventListener('click', function(){ clearInterval(timer); goTo(i); startTimer(); }); });
+      startTimer();
+    })();
+  </script>
 </body>
 </html>
