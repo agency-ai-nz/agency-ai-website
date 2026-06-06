@@ -201,7 +201,7 @@ header nav {
   padding: 88px 0;
 }
 
-.about h2, .approach h2, .contact h2 {
+.about h2, .approach h2, .contact h2, .services h2 {
   font-size: clamp(28px, 4vw, 42px);
   font-weight: 800;
   color: var(--blue);
@@ -241,6 +241,8 @@ header nav {
   margin-top: 48px;
 }
 
+.approach .cards { margin-top: 24px; }
+
 .card {
   background: #fff;
   border-radius: 10px;
@@ -278,8 +280,10 @@ header nav {
   background: var(--bone);
 }
 
+.services h2 { font-size: clamp(30px, 4.5vw, 46px); }
+
 .services-group {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .services-group-header {
