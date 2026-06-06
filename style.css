@@ -231,7 +231,7 @@ header nav {
 /* ── APPROACH ── */
 .approach {
   padding: 88px 0;
-  background: var(--bone);
+  background: #fff;
 }
 
 .cards {
@@ -275,7 +275,7 @@ header nav {
 /* ── SERVICES ── */
 .services {
   padding: 88px 0;
-  background: #fff;
+  background: var(--bone);
 }
 
 .services-group {
