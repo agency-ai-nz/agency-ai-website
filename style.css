@@ -248,6 +248,10 @@ header nav {
   border-radius: 10px;
   padding: 32px 28px;
   border: 1px solid #e8e5e0;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
 }
 
 .card-icon {
@@ -258,7 +262,9 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
 }
 
 .card h3 {
@@ -266,12 +272,17 @@ header nav {
   font-weight: 800;
   color: var(--blue);
   margin-bottom: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
 }
 
 .card p {
   font-size: 15px;
   color: var(--slate);
   line-height: 1.7;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 /* ── SERVICES ── */
