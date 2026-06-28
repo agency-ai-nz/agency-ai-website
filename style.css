@@ -34,7 +34,7 @@ header {
   border-bottom: 1px solid #eee;
 }
 
-#approach, #services, #contact {
+#loop, #approach, #outcomes, #for, #services, #contact {
   scroll-margin-top: 64px;
 }
 
@@ -381,7 +381,172 @@ footer .logo-text {
   color: var(--slate);
 }
 
+/* ── LOOP ── */
+.loop-section {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.loop-section h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.loop {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.loop-stage {
+  background: var(--bone);
+  border: 1px solid #e8e5e0;
+  border-radius: 10px;
+  padding: 24px 22px;
+}
+
+.loop-num {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.loop-ic {
+  display: block;
+  color: var(--blue);
+  margin: 12px 0 10px;
+}
+
+.loop-stage h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.loop-stage p {
+  font-size: 14px;
+  color: var(--slate);
+  line-height: 1.65;
+}
+
+/* ── APPROACH FOOT (human in the loop) ── */
+.approach-foot {
+  margin-top: 28px;
+  border-left: 3px solid var(--gold);
+  background: var(--bone);
+  border-radius: 0 8px 8px 0;
+  padding: 18px 22px;
+  max-width: 820px;
+}
+
+.approach-foot p {
+  font-size: 15px;
+  color: var(--slate);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.approach-foot strong { color: var(--charcoal); }
+
+/* ── OUTCOMES BAND ── */
+.outcomes {
+  padding: 64px 0;
+  background: var(--blue);
+  color: #fff;
+}
+
+.outcomes h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.outcomes .section-lead {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.outcomes-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.outcome-chip {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+/* ── EXAMPLE CHIPS (who it's for) ── */
+.example-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.example-chip {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  background: #fff;
+  border: 1px solid #e2ddd4;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.services-note {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--slate);
+  margin-top: 28px;
+}
+
+/* ── DELIVERY WRAP BAND ── */
+.wrap-band {
+  padding: 56px 0;
+  background: #fff;
+}
+
+.wrap-band .inner {
+  background: var(--bone);
+  border: 1px solid #e8e5e0;
+  border-radius: 14px;
+  padding: 36px 40px;
+  max-width: 940px;
+}
+
+.wrap-band h2 {
+  font-size: clamp(20px, 2.6vw, 26px);
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 12px;
+}
+
+.wrap-band p {
+  font-size: 16px;
+  color: var(--slate);
+  line-height: 1.75;
+  max-width: 760px;
+}
+
 /* ── RESPONSIVE ── */
+@media (max-width: 980px) {
+  .loop { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hero-split { grid-template-columns: 1fr; gap: 32px; padding: 48px 24px; }
@@ -389,5 +554,10 @@ footer .logo-text {
   .about-grid { grid-template-columns: 1fr; gap: 0; }
   .cards { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
-  .about, .approach, .services, .contact { padding: 48px 0; }
+  .about, .approach, .services, .contact, .loop-section, .outcomes, .wrap-band { padding: 48px 0; }
+  .wrap-band .inner { padding: 28px 24px; }
+}
+
+@media (max-width: 560px) {
+  .loop { grid-template-columns: 1fr; }
 }
