@@ -590,6 +590,14 @@ footer .logo-text {
   font-weight: 800;
   color: #fff;
   letter-spacing: 0.04em;
+  overflow: hidden;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
 }
 
 .team-name {
