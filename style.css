@@ -653,3 +653,12 @@ footer .logo-text {
 @media (max-width: 560px) {
   .loop { grid-template-columns: 1fr; }
 }
+
+/* The Clarity card leads each sector: it is the product, not another service
+   line, so it carries the brand mark and a quiet navy/gold lift. */
+.card-clarity {
+  border-color: #c8d7df;
+  background: linear-gradient(180deg, #f7fafb, #fff);
+}
+.card-clarity .card-icon { background: #fff; border: 1px solid #dbe6ec; }
+.card-clarity h3 { color: var(--navy, #0B5270); }
