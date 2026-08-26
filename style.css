@@ -335,7 +335,7 @@ header nav {
 .services-group-header p {
   font-size: 16px;
   color: var(--slate);
-  max-width: 620px;
+  max-width: none;
   line-height: 1.7;
 }
 
@@ -397,6 +397,7 @@ footer .logo-text {
 .loop-section .section-lead {
   color: rgba(255,255,255,0.65);
   margin-bottom: 40px;
+  max-width: none;
 }
 
 .loop {
@@ -561,6 +562,7 @@ footer .logo-text {
 
 .team .section-lead {
   margin-bottom: 48px;
+  max-width: none;
 }
 
 .team-grid {
